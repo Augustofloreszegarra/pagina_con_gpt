@@ -1,0 +1,110 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.nav-links {
+  list-style-type: none;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f2f2f2;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+/* Main */
+main {
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribuye los combos uniformemente en escritorio */
+}
+
+.combo {
+  width: calc(50% - 20px); /* 50% del ancho menos el espacio entre combos */
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.combo h2 {
+  margin-bottom: 10px;
+}
+
+.combo p {
+  font-size: 1.1em;
+}
+
+.combo img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 0.9em;
+}
+
+
+/* Media queries para hacer el sitio responsivo */
+@media only screen and (max-width: 768px) {
+  .combo {
+      width: calc(100% - 20px); /* 100% del ancho menos el espacio entre combos */
+      margin-bottom: 20px;
+  }
+
+  main {
+      justify-content: center; /* Centra los combos en diseño responsivo */
+  }
+}
